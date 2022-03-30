@@ -1,9 +1,10 @@
 apiVersion: apps/v1
-kind: ReplicaSet
+kind: Deployment
 metadata:
-  name: myapp-replicaset
+  name: myapp-deployment
   labels:
-    app: myapp
+    tier: frontedn
+    app: nginx
 
 spec:
   selector:
